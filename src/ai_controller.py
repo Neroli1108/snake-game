@@ -82,7 +82,7 @@ class AIController:
                     visited.add(next_pos)
                     queue.append(next_pos)
         
-        return space_count >= len(self.snake.body) + 3
+        return space_count >= len(self.snake.body)
     
     def choose_best_safe_move(self, safe_moves):
         """Choose best among safe moves"""
